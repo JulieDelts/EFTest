@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EFRelations.BrickContext">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAIABAAAAEAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>BrickContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EFRelations.BrickContextFactory">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BrickContextFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EFRelations.Models.BasePlate">
+    <Position X="4.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEBAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\BasePlate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EFRelations.Models.Brick">
+    <Position X="2.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAABAAQAAAAAAEAAAAAAABAAAAA=</HashCode>
+      <FileName>Models\Brick.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Colour" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Tags" />
+      <Property Name="Availability" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="EFRelations.BrickAvailability">
+    <Position X="6.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABACAAAAAAAAAAAgAAABAAAIAAAAAABAAAAAAAAIAAA=</HashCode>
+      <FileName>Models\BrickAvailability.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Vendor" />
+      <Property Name="Brick" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="EFRelations.Models.MiniFigureHead">
+    <Position X="1.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\MiniFigureHead.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EFRelations.Models.Tag">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAABAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Tag.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Bricks" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="EFRelations.Models.Vendor">
+    <Position X="6.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAABAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Vendor.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Availability" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Enum Name="EFRelations.Models.Colour">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAhAAAAAAAAAABAAAAAAAAAAAADAAAAA=</HashCode>
+      <FileName>Models\Brick.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9.16" />
+</ClassDiagram>
